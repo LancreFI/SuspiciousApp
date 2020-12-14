@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">SuspiciousApp</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="textview_first">Latitude  : </string>
+    <string name="textview_first_content">-</string>
+    <string name="textview_second">Longitude: </string>
+    <string name="textview_second_content">-</string>
+    <string name="loc_button_text">Get location</string>
+    <string name="channel_name">test_channel</string>
+    <string name="channel_description">test_channel_desc</string>
+</resources>
