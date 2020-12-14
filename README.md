@@ -10,3 +10,7 @@ java/com.example.suspiciousapp/snoopLocation contains snoopLocation.kt class and
 java/com.example.suspiciousapp contains in addition to above mentioned the FirstFragment.kt and MainActivity.kt
 
 Rest of the files are in their default locations.
+
+Just run the app, give location permissions (the "always allow") and the app starts running. If you actually open the app you can get your current location by pushing the button and display the coordinates, though the app is already unbeknownst to the user acquiring the location coordinates every minute and sending them to the server you can define in netSock.kt. The app is sticky and should be quit resilient to die. 
+
+The data can be received for example with netcat, for example "ncat -kl -p 9999 -o ncatout --recv-only" ncatout being the file to which the data will be written and remember to adjust the port accordingly in the app netSock.kt script before deployment.
