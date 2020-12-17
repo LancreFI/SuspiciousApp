@@ -15,4 +15,6 @@ Just run the app, give location permissions (the "always allow") and the app sta
 
 The data can be received for example with netcat, for example "ncat -kl -p 9999 -o ncatout --recv-only" ncatout being the file to which the data will be written and remember to adjust the port accordingly in the app's netSock.kt script before deployment.
 
+I also suggest defining a longer timeout for the TCP-socket in netSock.kt as the default is now 2 seconds, which might not be long enouhg in a situation where the user has poor network connectivity (client.setSoTimeout(2)).
+
 Due to restrictions the background location (while the app isn't visible or the screen is locked) can only be obtained an few times in an hour. Also the app won't send the coordinates, if the location hasn't changed since the last location polling.
